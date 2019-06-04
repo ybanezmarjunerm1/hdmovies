@@ -61,7 +61,7 @@ ga('send', 'pageview');
 
         <!-- Begin Menu -->
 
-            <ul class="navbar-nav ml-auto">
+            <!-- <ul class="navbar-nav ml-auto">
 
                 {% if page.url == "/" %}
                 <li class="nav-item active">
@@ -93,7 +93,7 @@ ga('send', 'pageview');
 
                 {% include search-lunr.html %}
 
-            </ul>
+            </ul> -->
 
         <!-- End Menu -->
 
@@ -143,7 +143,7 @@ ga('send', 'pageview');
 
 <!-- Categories Jumbotron
 ================================================== -->
-<div class="jumbotron fortags">
+<!-- <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
@@ -151,20 +151,10 @@ ga('send', 'pageview');
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
+            <iframe width='640' height='360' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' allowfullscreen='yes' src='//live-nba.stream/embed/golden-state-warriors-live.html'></iframe>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- Begin Footer
 ================================================== -->
@@ -188,7 +178,7 @@ ga('send', 'pageview');
 <!-- Scripts
 ================================================== -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
@@ -204,5 +194,5 @@ ga('send', 'pageview');
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
 
-</body>
+</body> -->
 </html>
